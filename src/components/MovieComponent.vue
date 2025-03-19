@@ -4,9 +4,9 @@
     
 
      <div class="row">
-       <div v-for="(item, index) in dataList" class="col-xs-12 col-sm-4 q-pa-sm" >
+       <div v-for="(item, index) in props.dataList" class="col-xs-12 col-sm-4 q-pa-sm" >
 
-        <div style="height: 650px;position: relative;" class="">
+        <div style="height: 550px;position: relative;" class="">
            <q-img :src="image_url + item.poster_path" style="height: 70%;">
              <template v-slot:error>
               <div class="absolute-full flex flex-center bg-negative text-white">
@@ -19,7 +19,6 @@
           <div class="text-body2 ellipsis-3-lines">{{item.overview}}</div>
 
           <div class="q-gutter-sm absolute-bottom">
-            <q-btn outline style="color: goldenrod;" label="Upcoming" class="full-width" />
 
             <q-btn outline style="color: black;" :label="item.release_date"
              class="full-width" />
@@ -55,7 +54,7 @@
 
   
 
-  const dataList = ref([])
+  
  
 
   
