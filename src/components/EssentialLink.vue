@@ -1,9 +1,7 @@
 <template>
   <q-item
     clickable
-    tag="a"
-    target="_blank"
-    :href="props.link"
+    :to="props.link"
   >
     <q-item-section
       v-if="props.icon"
@@ -20,6 +18,16 @@
 </template>
 
 <script setup>
+
+import {  useRouter } from 'vue-router'
+
+const router = useRouter()
+
+function routeTo(path){
+
+   router.push(path)
+} 
+
 const props = defineProps({
   title: {
     type: String,

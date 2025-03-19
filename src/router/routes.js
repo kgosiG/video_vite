@@ -3,7 +3,12 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
+      { path: 'indx', component: () => import('pages/IndexPage.vue') },
+      { path: 'toprated', component: () => import('pages/TopRatedPage.vue') },
+      { path: 'upcoming', component: () => import('pages/UpcomingPage.vue') },
+      { path: '/', component: () => import('pages/SearchPage.vue') },
+      { path: 'search', component: () => import('pages/SearchPage.vue') },
+      
     ]
   },
 
