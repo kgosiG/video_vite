@@ -1,6 +1,6 @@
 # VideoVite (movievite)
 
-Good stories
+A movie website using the themoviedb.org api
 
 ## Install the dependencies
 ```bash
