@@ -11,8 +11,11 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title>
-          movie vite
+        <q-toolbar-title >
+          <div @click="router.push('/')">
+            Movie Vite
+          </div>
+          
         </q-toolbar-title>
 
         <!-- <div>MV v 0.0.1</div> -->
@@ -49,6 +52,10 @@
 import { ref } from 'vue'
 
 import EssentialLink from 'components/EssentialLink.vue'
+
+import { useRoute, useRouter } from 'vue-router'
+
+ const router = useRouter()
 
 
 
