@@ -1,6 +1,6 @@
-# VideoVite (movievite)
+# VideoVite
 
-A movie website using the themoviedb.org api
+A movie website using the themoviedb.org api to show what is popular,top rated and ability to search for movies
 
 ## Install the dependencies
 ```bash
